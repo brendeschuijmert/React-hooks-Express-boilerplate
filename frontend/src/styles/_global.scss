@@ -1,0 +1,72 @@
+@import './variables';
+@import '~bootstrap/scss/bootstrap';
+
+#root,
+html,
+body {
+  background: white;
+  font-size: 14px;
+  color: black;
+  height: 100%;
+}
+
+html {
+  position: relative;
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1 0 auto;
+  }
+}
+
+.app-content {
+  height: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.review-table {
+  th,
+  tr {
+    width: 20%;
+  }
+
+  td:last-child,
+  .star-ratings {
+    white-space: nowrap;
+  }
+}
+
+.pagination {
+  margin: auto;
+  li {
+    background-color: #bdbdbd;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    a {
+      padding: 5px 10px;
+      display: inline-block;
+      outline: none;
+    }
+  }
+
+  li + li {
+    margin-left: 5px;
+  }
+
+  li.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  li.active {
+    background-color: #616161;
+    border: 1px solid #757575;
+    box-shadow: saturation($color: #757575);
+  }
+}
