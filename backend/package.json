@@ -1,0 +1,44 @@
+{
+  "name": "toptal-backend",
+  "version": "1.0.0",
+  "description": "toptal-testing-project",
+  "main": "index.js",
+  "author": "dream high",
+  "license": "MIT",
+  "scripts": {
+    "serve": "nodemon index.js",
+    "start": "NODE_ENV=production node index.js",
+    "db:migrate": "node migrate.js",
+    "db:revert": "node migrate.js revert",
+    "db:revert-last": "node migrate.js revert"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "helmet": "^3.21.3",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.3",
+    "mongoose-delete": "^0.5.1",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
+  }
+}
